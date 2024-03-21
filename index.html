@@ -17,7 +17,7 @@
 			<input type="text" name="op" disabled class="op">
 		</div>
 		<div>
-		    <input type="button" name="clr" value="C" onclick="op.value='' ">
+		    <input type="button" name="clr" value="C" onclick="op.value=(op.value).slice(0,-1) ">
 		    <input type="button" name="alclr" value="AC" onclick="op.value='' ">
 		    <input class="opr" type="button" name="di" value="/" onclick="op.value+='/' " >
 		    <input class="opr" type="button" name="mod" value="%" onclick="op.value+='%' ">		    
